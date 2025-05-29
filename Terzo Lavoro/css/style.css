@@ -15,31 +15,43 @@ main{
     background: #f3ebeb;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.aside{
 
+#aside{
+   background: #1aedf5;
+   width: 70vw;
+   height: 70vh;
 }
 
-.sidebar{
+#sidebar{
+    background: #008cff;
+    width: 30vw;
+    height: 70vh;
+}
 
+.item{
+    color: #000000;
+    padding: 20px;
+    flex:1 0 200px;
 }
 
 footer{
+    background: #36b947;
+    height: 70x;
+    padding: 6px 32px;
 
 }
 
 #link{
-    padding: 16px 32px;
-    border-radius: 11px;
     margin: 24px;
-    background: #000000;
     color: #ffffff;
     cursor: pointer;
     text-decoration: none;
 }
 #link:hover{
-    background: #ffffff;
-    color: #000000;
+    color: #186b26;
     
 }
