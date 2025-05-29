@@ -2,7 +2,7 @@
 header, main, footer{width: 100vw;}
 
 header{
-    background: #ff8737;
+    background: #ff8737; 
     height: 70px;
     padding: 6px 32px;
 }
@@ -12,46 +12,137 @@ header{
 }
 
 main{
-    background: #f3ebeb;
+    background: #f3ebeb; 
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    min-height: calc(100vh - 70px - 10vh); 
 }
 
+.main-content-flex-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+}
 
 #aside{
-   background: #1aedf5;
+   background: #1aedf5; 
    width: 70vw;
-   height: 70vh;
+   height: 70vh; 
 }
 
 #sidebar{
     background: #008cff;
     width: 30vw;
-    height: 70vh;
+    height: 70vh; 
 }
 
 .item{
-    color: #000000;
+    color: #000000; 
     padding: 20px;
-    flex:1 0 200px;
+    flex:1 0 200px; 
 }
 
 footer{
-    background: #36b947;
-    height: 70x;
+    background: #36b947; 
+    min-height: 10vh;
     padding: 6px 32px;
-
 }
 
 #link{
     margin: 24px;
-    color: #ffffff;
+    color: #ffffff; 
     cursor: pointer;
     text-decoration: none;
+    transition: color 0.3s ease; 
 }
+
 #link:hover{
     color: #186b26;
+}
+
+@media (max-width: 768px) {
+    header {
+        background: #4371ff; 
+    }
+
+    main {
+        background: #e0f7fa; 
+    }
+
+    .main-content-flex-container { 
+        flex-direction: column; 
+        height: auto; 
+        background: #e0f7fa; 
+    }
     
+    #aside {
+        background: #7ad6ff; 
+        width: 100%; 
+        height: 40vh; 
+    }
+
+    #sidebar {
+        background: #4e9cff; 
+        width: 100%; 
+        height: 40vh; 
+    }
+
+    footer {
+        background: #368cb9; 
+    }
+
+    #link {
+        color: #e0ffff; 
+    }
+
+    #link:hover {
+        color: #aee0f7; 
+    }
+    #link:focus,
+    #link:active {
+        color: #71c4ef; 
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        background: #405cf5; 
+    }
+
+    main {
+        background: #d0f0ff; 
+    }
+
+    .main-content-flex-container { 
+        flex-direction: column; 
+        height: auto; 
+        background: #d0f0ff; 
+    }
+
+    #aside {
+        background: #88d2f0; 
+        width: 100%; 
+        height: 40vh; 
+    }
+
+    #sidebar {
+        background: #5ba6e6; 
+        width: 100%; 
+        height: 40vh; 
+    }
+
+    footer {
+        background: #4682b4; 
+    }
+
+    #link {
+        color: #ccf2ff; 
+    }
+
+    #link:hover {
+        color: #99e1ff; 
+    }
+    #link:focus,
+    #link:active {
+        color: #66ccff; 
+    }
 }
